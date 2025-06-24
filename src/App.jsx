@@ -7,12 +7,16 @@ import Logo from '../src/assets/react.svg'
 import Button from './components/Button'
 import List from './components/List'
 import Navber from './layouts/Navber'
+import Home from './layouts/Home'
+import About from './layouts/About'
 
 const App = () => {
   return (
     
     <>
     <Navber/>
+    <Home/>
+    <About/>
     </>
   )
 }

@@ -16,6 +16,7 @@ const Navber = () => {
     }
   return (
     <>
+    {/* desktop start */}
     <nav className='hidden lg:block bg-second py-5 '>
         <Container>
             <Flex>
@@ -53,7 +54,8 @@ const Navber = () => {
             </Flex>
         </Container>
     </nav>
-
+    {/* desktop end */}
+    {/* Mobile Start */}
     <nav className='relative bg-second lg:hidden py-4 '>
         <Flex className='px-4 justify-between items-center '>
             <div><h1 className='text-lg text-third font-semibold font-pop '><i>Lêmon</i></h1></div>
@@ -95,6 +97,7 @@ const Navber = () => {
                 }
             
     </nav>
+    {/* mobile end */}
     </>
     
   )
