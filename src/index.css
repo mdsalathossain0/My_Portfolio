@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+  /* space */
+  --spacing-container: 968px; 
+   --text-56: 56px;
+
+  /* color */
+  --color-first: #ffffff;
+  --color-second: #dfe4ea;
+  --color-third: #2f3542;
+  --color-fourth: #a4b0be;
+
+  /* font family */
+  --font-pop:  "Poppins",; 
+}
