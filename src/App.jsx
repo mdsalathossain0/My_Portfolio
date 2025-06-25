@@ -1,14 +1,11 @@
 import React from 'react'
-import Container from './components/Container'
-import Flex from './components/Flex'
-import Image from './components/Image'
-
-import Logo from '../src/assets/react.svg'
-import Button from './components/Button'
-import List from './components/List'
 import Navber from './layouts/Navber'
 import Home from './layouts/Home'
 import About from './layouts/About'
+import Skills from './layouts/Skills'
+import Services from './layouts/Services'
+import Project from './layouts/Project'
+import Contact from './layouts/Contact'
 
 const App = () => {
   return (
@@ -17,6 +14,10 @@ const App = () => {
     <Navber/>
     <Home/>
     <About/>
+    <Skills/>
+    <Services/>
+    <Project/>
+    <Contact/>
     </>
   )
 }

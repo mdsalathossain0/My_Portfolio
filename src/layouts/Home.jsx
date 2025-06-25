@@ -8,6 +8,7 @@ import { FiGithub } from 'react-icons/fi'
 import { PiLinkedinLogoBold } from 'react-icons/pi'
 import { ImWhatsapp } from 'react-icons/im'
 import { CiFacebook } from 'react-icons/ci'
+import { Link } from 'react-scroll'
 
 const Home = () => {
   return (
@@ -27,7 +28,7 @@ const Home = () => {
                <h1 className='w-w340 md:w-w640 lg:w-full mx-auto text-xl lg:text-56 text-third font-bold font-pop leading-7 pb-6 md:pb-8 lg:pb-12'>HEY, I'M ABU SALAT LEMON</h1>
               <SubHeading className='pb-5' text='Front-end Developer With React'/>
               <ComText className='pb-15' text='I,m a Professional Front-End Developer specializing in React, creating responsive, user-focused web interfaces with clean code, performance optimization, and modern design.'/>
-              <Button text='View Project'/>
+              <Link to='project' smooth={true} duration={500}><Button text='View Project'/></Link>
              </div>
              </div>
             </Flex>
