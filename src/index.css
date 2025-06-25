@@ -3,13 +3,16 @@
 @theme {
   /* space */
   --spacing-container: 1200px; 
+  --spacing-w300: 300px; 
+  --spacing-w640: 640px; 
    --text-56: 56px;
 
   /* color */
-  --color-first: #ffffff;
+  --color-first: #57606f;
   --color-second: #dfe4ea;
   --color-third: #2f3542;
   --color-fourth: #a4b0be;
+  --color-fifth: #747d8c;
 
   /* font family */
   --font-pop:  "Poppins",; 
