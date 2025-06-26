@@ -12,8 +12,9 @@
   --color-second: #dfe4ea;
   --color-third: #2f3542;
   --color-fourth: #a4b0be;
-  --color-fifth: #747d8c;
+  --color-fifth: #f1f2f6;
 
   /* font family */
-  --font-pop:  "Poppins",; 
+  --font-pop:  "Poppins"; 
+  --font-robo:  "Roboto"; 
 }

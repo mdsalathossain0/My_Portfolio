@@ -26,7 +26,7 @@ const Navber = () => {
                 <div className='w-4/12'>
                     <Flex className='gap-x-5 items-center'>
                         <div className='w-[70px] h-[70px] rounded-full'><Image className='w-full h-full rounded-full' src={Logo}/></div>
-                        <h1 className='lg:text-xl text-third font-semibold font-pop italic'>LÊMON</h1>
+                        <h1 className='lg:text-xl text-third font-bold font-pop italic'>LÊMON</h1>
                     </Flex>
                 </div>
                 <div className='w-8/12 '>
