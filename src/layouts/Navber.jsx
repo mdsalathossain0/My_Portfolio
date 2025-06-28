@@ -20,7 +20,7 @@ const Navber = () => {
   return (
     <>
     {/* desktop start */}
-    <nav className='hidden lg:block bg-second py-10 '>
+    <nav className='px-5 hidden lg:block bg-second py-10 '>
         <Container>
             <Flex className='items-center'>
                 <div className='w-4/12'>

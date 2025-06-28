@@ -20,7 +20,7 @@ const About = () => {
           <Heading text='ABOUT ME'/>
           <ComText className='lg:w-[800px] lg:mx-auto py-10 px-5 lg:px-0' text='Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology'/>
         </div>
-        <Flex className='flex-wrap flex-col lg:flex-row lg:items-center justify-center'>
+        <Flex className='flex-wrap  lg:flex-row lg:items-center justify-center lg:px-5'>
           <div className='w-full lg:w-1/2 '>
           <div className='flex justify-center  rounded-xl pt-10 px-5 lg:px-0 lg:w-[80%]'>
             <Image className='w-full rounded-xl' src={AboutImg}/>
@@ -28,22 +28,22 @@ const About = () => {
      
           </div>
           <div className='w-full lg:w-1/2'>
-           <Flex className='flex-col md:flex-row lg:flex-row gap-y-8 md:gap-x-10 lg:gap-y-0 items-center md:justify-center lg:justify-between  pt-10 '>
-            <div className='w-[280px] h-auto  bg-white rounded-[8px] drop-shadow-lg '>
+           <Flex className=' gap-x-3 md:gap-x-10 lg:gap-y-0 items-center md:justify-center lg:justify-between  pt-10 mx-2 lg:mx-0'>
+            <div className='w-full lg:w-[280px] grid h-[185px]  bg-white rounded-[8px] drop-shadow-lg '>
               <div className='flex flex-col items-center py-5 '>
                 <RiVerifiedBadgeFill className='text-2xl'/>
-                <h3 className='text-xl text-black font-bold font-robo leading-8 py-3'>Experience</h3>
-                <p className='text-lg text-third font-normal font-robo leading-7 text-center'>1 + years </p>
-                <p className='text-lg text-third font-normal font-robo leading-7 text-center'>Frontend Development </p>
+                <h3 className='text-lg lg:text-xl text-black font-bold font-robo leading-8 py-3'>Experience</h3>
+                <p className='text-base lg:text-lg text-third font-normal font-robo leading-7 text-center'>1 + years </p>
+                <p className='text-base lg:text-lg text-third font-normal font-robo leading-7 text-center pb-3'>Frontend Development </p>
 
               </div>
             </div>
-            <div className='w-[280px] h-auto  bg-white rounded-[8px] drop-shadow-lg'>
+            <div className='w-full lg:w-[280px] h-[185px]  bg-white rounded-[8px] drop-shadow-lg'>
                 <div className='flex flex-col items-center py-5'>
                   <RiVerifiedBadgeFill className='text-2xl'/>
-                  <h3 className='text-xl text-black font-bold font-robo leading-8 py-3'>Education</h3>
-                  <p className='text-lg text-third font-normal font-robo leading-7 text-center'>Intermadiate </p>
-                  <p className='text-lg text-third font-normal font-robo leading-7 text-center'>B.S.c in CSE </p>
+                  <h3 className='text-lg lg:text-xl text-black font-bold font-robo leading-8 py-3'>Education</h3>
+                  <p className='text-base lg:text-lg text-third font-normal font-robo leading-7 text-center'>Intermadiate </p>
+                  <p className='text-base lg:text-lg text-third font-normal font-robo leading-7 text-center'>B.S.c in CSE </p>
 
                 </div>
             </div>
