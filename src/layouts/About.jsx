@@ -28,7 +28,7 @@ const About = () => {
      
           </div>
           <div className='w-full lg:w-1/2'>
-           <Flex className='flex-col lg:flex-row gap-y-8 lg:gap-y-0 items-center lg:justify-between pt-10 '>
+           <Flex className='flex-col md:flex-row lg:flex-row gap-y-8 md:gap-x-10 lg:gap-y-0 items-center md:justify-center lg:justify-between  pt-10 '>
             <div className='w-[280px] h-auto  bg-white rounded-[8px] drop-shadow-lg '>
               <div className='flex flex-col items-center py-5 '>
                 <RiVerifiedBadgeFill className='text-2xl'/>
