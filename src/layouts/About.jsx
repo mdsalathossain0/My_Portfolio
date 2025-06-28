@@ -13,7 +13,7 @@ import { PiReadCvLogoFill } from 'react-icons/pi'
 
 const About = () => {
   return (
-    <section id='about' className='bg-fifth py-15 lg:py-35'>
+    <section id='about' className='bg-fifth py-15 lg:py-28'>
         
       <Container>
         <div className='text-center'>
@@ -29,8 +29,8 @@ const About = () => {
           </div>
           <div className='w-full lg:w-1/2'>
            <Flex className='flex-col lg:flex-row gap-y-8 lg:gap-y-0 items-center lg:justify-between pt-10 '>
-            <div className='w-[280px] h-auto  bg-fifth rounded-[8px] drop-shadow-lg'>
-              <div className='flex flex-col items-center py-5'>
+            <div className='w-[280px] h-auto  bg-white rounded-[8px] drop-shadow-lg '>
+              <div className='flex flex-col items-center py-5 '>
                 <RiVerifiedBadgeFill className='text-2xl'/>
                 <h3 className='text-xl text-black font-bold font-robo leading-8 py-3'>Experience</h3>
                 <p className='text-lg text-third font-normal font-robo leading-7 text-center'>1 + years </p>
@@ -38,7 +38,7 @@ const About = () => {
 
               </div>
             </div>
-            <div className='w-[280px] h-auto  bg-fifth rounded-[8px] drop-shadow-lg'>
+            <div className='w-[280px] h-auto  bg-white rounded-[8px] drop-shadow-lg'>
                 <div className='flex flex-col items-center py-5'>
                   <RiVerifiedBadgeFill className='text-2xl'/>
                   <h3 className='text-xl text-black font-bold font-robo leading-8 py-3'>Education</h3>
