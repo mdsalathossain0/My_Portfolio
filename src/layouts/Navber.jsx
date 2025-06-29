@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Container from '../components/Container'
 import Flex from '../components/Flex'
 import List from '../components/List'
@@ -11,9 +11,22 @@ import { IoBriefcaseOutline } from 'react-icons/io5'
 import { TbMessageCircleUser } from 'react-icons/tb'
 import { HiOutlineBars3 } from 'react-icons/hi2'
 import { RxCross2 } from 'react-icons/rx'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
+
+
 
 const Navber = () => {
+         const location = useLocation();
+
+    useEffect(() => {
+        if (location.state?.scrollTo) {
+            const element = document.getElementById(location.state.scrollTo);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    }, [location]);
+
     let [show , setShow]= useState(false)
     let handleShow=()=>{
         setShow(!show)
@@ -25,7 +38,7 @@ const Navber = () => {
         <Container>
             <Flex className='items-center'>
                 <div className='w-4/12'>
-                   <Link to='/'>
+                   <Link to='/' state={{scrollTo:'home'}}>
                     <Flex className='gap-x-5 items-center'>
                         <div className='w-[55px] h-[55px] rounded-full'><Image className='w-full h-full rounded-full' src={Logo}/></div>
                         <h1 className='lg:text-xl text-third font-bold font-pop italic'>LÊMON</h1>
@@ -42,26 +55,36 @@ const Navber = () => {
                   </div>
                 
                   </Link>
+                <Link state={{scrollTo:'about'}}>
                 <div className='flex items-center gap-x-2'>
                         <FaRegUser className='text-base'/>
                         <List text='About'/>
                 </div>
+                </Link>
+                <Link state={{scrollTo:'skills'}}>
                 <div className='flex items-center gap-x-2'>
                         <FaRegFileAlt className='text-base'/>
                         <List text='Skills'/>
                 </div>
+                </Link>
+                <Link state={{scrollTo:'services'}}>
                 <div className='flex items-center gap-x-2'>
                         <IoBriefcaseOutline className='text-base'/>
                         <List text='Services'/>
                 </div>
+                </Link>
+                <Link state={{scrollTo:'project'}}>
                 <div className='flex items-center gap-x-2'>
                         <FaRegAddressCard className='text-base'/>
                         <List text='Project'/>
                 </div>
+                </Link>
+                <Link state={{scrollTo:'contact'}}>
                 <div className='flex items-center gap-x-2'>
                         <TbMessageCircleUser className='text-base'/>
                         <List text='Contact'/>
                 </div>
+                </Link>
                 </Flex>                
                 </div>
             </Flex>
