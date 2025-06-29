@@ -18,14 +18,14 @@ const Skills = () => {
 
             <Flex className=' gap-x-6 flex-wrap lg:gap-x-12 justify-center'>
               <div>
-                <SkillInfo title='HTML' info='Experienced'/>
+                 <SkillInfo title='HTML' info='Experienced'/>
                  <SkillInfo title='Css' info='Experienced'/>
-                 <SkillInfo title='JavaScript' info='Basic'/>
+                 <SkillInfo title='Bootstrap' info='Experienced'/>
               </div>
 
               <div>
+                <SkillInfo title='JavaScript' info='Basic'/>
               <SkillInfo title='Tailwind' info='Experienced'/>  
-              <SkillInfo title='Bootstrap' info='Experienced'/>
               <SkillInfo title='React' info='Intermediate'/>
               </div>
               
@@ -37,7 +37,7 @@ const Skills = () => {
               <div>
                    <SkillInfo title='VsCode' info='Experienced'/>
                    <SkillInfo title='Figma' info='Experienced'/>
-                   <SkillInfo title='Chrome DevTools' info='Experienced'/>
+                   <SkillInfo title='ReactRedux' info='Basic'/>
               </div>
               <div>
 

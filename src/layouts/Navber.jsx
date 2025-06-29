@@ -11,6 +11,7 @@ import { IoBriefcaseOutline } from 'react-icons/io5'
 import { TbMessageCircleUser } from 'react-icons/tb'
 import { HiOutlineBars3 } from 'react-icons/hi2'
 import { RxCross2 } from 'react-icons/rx'
+import { Link } from 'react-router-dom'
 
 const Navber = () => {
     let [show , setShow]= useState(false)
@@ -24,17 +25,23 @@ const Navber = () => {
         <Container>
             <Flex className='items-center'>
                 <div className='w-4/12'>
+                   <Link to='/'>
                     <Flex className='gap-x-5 items-center'>
-                        <div className='w-[70px] h-[70px] rounded-full'><Image className='w-full h-full rounded-full' src={Logo}/></div>
+                        <div className='w-[55px] h-[55px] rounded-full'><Image className='w-full h-full rounded-full' src={Logo}/></div>
                         <h1 className='lg:text-xl text-third font-bold font-pop italic'>LÊMON</h1>
                     </Flex>
+                   </Link>
                 </div>
                 <div className='w-8/12 '>
                 <Flex className='gap-x-8 xl:gap-x-10 items-center justify-end'>
-                <div className='flex items-center gap-x-2'>
+                
+                  <Link to='/'>
+                  <div className='flex items-center gap-x-2'>
                         <AiOutlineHome className='text-base'/>
                         <List text='Home'/>
-                </div>
+                  </div>
+                
+                  </Link>
                 <div className='flex items-center gap-x-2'>
                         <FaRegUser className='text-base'/>
                         <List text='About'/>

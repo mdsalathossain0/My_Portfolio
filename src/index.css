@@ -4,8 +4,9 @@
   /* space */
   --spacing-container: 1200px; 
   --spacing-w300: 300px; 
-  --spacing-w640: 640px; 
+  --spacing-w640: 640px;  
    --text-56: 56px;
+   --text-44: 44px;
 
   /* color */
   --color-first: #57606f;
@@ -13,7 +14,6 @@
   --color-third: #2f3542;
   --color-fourth: #a4b0be;
   --color-fifth: #f1f2f6;
-  --color-sixth: #f7f5f5;
 
 
   /* font family */
