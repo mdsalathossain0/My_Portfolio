@@ -105,30 +105,43 @@ const Navber = () => {
              
                 {
                     show && <ul className='absulate top-0 left-0 w-full flex flex-col items-center justify-center gap-y-5 py-4 '>
-                    <div className='flex items-center gap-x-2'>
+                    <Link to='/' state={{scrollTo:'home'}}>
+                     <div className='flex items-center gap-x-2'>
                         <AiOutlineHome className='text-sm'/>
                         <List text='Home'/>
-                </div>
-                <div className='flex items-center gap-x-2'>
+                    </div>
+                    </Link>
+                    <Link state={{scrollTo:'about'}}>
+                    <div className='flex items-center gap-x-2'>
                         <FaRegUser className='text-sm'/>
                         <List text='About'/>
-                </div>
-                <div className='flex items-center gap-x-2'>
+                    </div>
+                    </Link>
+                    <Link state={{scrollTo:'skills'}}>
+                    <div className='flex items-center gap-x-2'>
                         <FaRegFileAlt className='text-sm'/>
                         <List text='Skills'/>
-                </div>
-                <div className='flex items-center gap-x-2'>
-                        <IoBriefcaseOutline className='text-sm'/>
-                        <List text='Services'/>
-                </div>
-                <div className='flex items-center gap-x-2'>
+                    </div>
+                    </Link>
+                    <Link state={{scrollTo:'portfolio'}}>
+                    <div className='flex items-center gap-x-2'>
                         <FaRegAddressCard className='text-sm'/>
                         <List text='Portfolio'/>
-                </div>
-                <div className='flex items-center gap-x-2'>
+                    </div>
+                    </Link>
+                    <Link state={{scrollTo:'services'}}>
+                    <div className='flex items-center gap-x-2'>
+                        <IoBriefcaseOutline className='text-sm'/>
+                        <List text='Services'/>
+                    </div>
+                    </Link>
+                    
+                    <Link state={{scrollTo:'contact'}}>
+                    <div className='flex items-center gap-x-2'>
                         <TbMessageCircleUser className='text-sm'/>
                         <List text='Contact'/>
-                </div>
+                    </div>
+                    </Link>
                 </ul>
                 }
             
