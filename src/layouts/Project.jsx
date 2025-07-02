@@ -8,7 +8,10 @@ import Orebi from '../assets/ecommerce.PNG'
 import Inspiration from '../assets/inspiration.PNG'
 import { Link } from 'react-router-dom'
 import { IoIosArrowRoundForward } from 'react-icons/io'
+import ProjectDetails from '../components/ProjectDetails'
 
+import Html7 from '../assets/crud.PNG'
+import Html1 from '../assets/foodi.PNG'
 const Project = () => {
   return (
     <section id='project' className='bg-fifth py-28'>
@@ -50,6 +53,11 @@ const Project = () => {
               
 
           </div>
+        </Flex>
+        <Flex className='gap-x-5'>
+          <ProjectDetails title='Fresh' catagory='React' image={Html7}/>
+          <ProjectDetails title='Fresh' catagory='React' image={Html1}/>
+          <ProjectDetails title='Fresh' catagory='React' image={Html7}/>
         </Flex>
       </Container>
         
