@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Container from '../components/Container'
 import Image from '../components/Image'
 import Flex from '../components/Flex'
@@ -10,9 +10,36 @@ import { Link } from 'react-router-dom'
 import { IoIosArrowRoundForward } from 'react-icons/io'
 import ProjectDetails from '../components/ProjectDetails'
 
-import Html7 from '../assets/crud.PNG'
-import Html1 from '../assets/foodi.PNG'
+
+import Html1 from '../assets/nexcent.PNG'
+import Html2 from '../assets/foodi.PNG'
+import Html3 from '../assets/omah.PNG'
+import Html4 from '../assets/fresh.PNG'
+import Html5 from '../assets/shoescart.PNG'
+import Html6 from '../assets/animation.PNG'
+import Html7 from '../assets/startup.PNG'
+
+import Java1 from '../assets/crud.PNG'
+import Java2 from '../assets/mathsol.PNG'
+import Java3 from '../assets/guessnum.PNG'
+import Java4 from '../assets/digitalclock.PNG'
+import Java5 from '../assets/counterjs.PNG'
+import Java6 from '../assets/fclick.PNG'
+import Java7 from '../assets/domclick.PNG'
+
+import React1 from '../assets/ecommerce.PNG'
+import React2 from '../assets/inspiration.PNG'
+import React3 from '../assets/innovate.PNG'
+
 const Project = () => {
+  
+  let [activelist, setActivelist]=useState(3)
+  let list = [ 'All' , 'Html','JavaScript', 'React']
+
+  let handleClick=(index)=>{
+    setActivelist(index)
+  }
+
   return (
     <section id='project' className='bg-fifth py-28'>
       <Container>
@@ -54,11 +81,78 @@ const Project = () => {
 
           </div>
         </Flex>
-        <Flex className='gap-x-5'>
-          <ProjectDetails title='Fresh' catagory='React' image={Html7}/>
-          <ProjectDetails title='Fresh' catagory='React' image={Html1}/>
-          <ProjectDetails title='Fresh' catagory='React' image={Html7}/>
+        <h3 className='text-center text-[48px] text-third font-semibold font-robo pt-18'>Event to Event Project</h3>
+        <Flex className='gap-x-5 items-center justify-center pt-5 pb-12'>
+          {
+            list.map((item,index)=>(
+              <div key={index} onClick={()=>handleClick(index)}>
+                
+                <h4 className={`${index===activelist? 'bg-third text-fifth': ''} text-2xl  font-medium font-robo py-2 px-3 rounded-lg cursor-pointer`}>{item}</h4>
+              </div>
+              
+            ))
+          }
+          
         </Flex>
+        {
+          activelist===0 ? (
+
+            <Flex className='gap-5 flex-wrap'>
+            <ProjectDetails title='Nextcent' catagory='Html' image={Html1}/>
+            <ProjectDetails title='Foodi' catagory='Html' image={Html2}/>
+            <ProjectDetails title='Omah' catagory='Html' image={Html3}/>
+            <ProjectDetails title='Fresh' catagory='Html' image={Html4}/>
+            <ProjectDetails title='Shoes Cart' catagory='Html' image={Html5}/>
+            <ProjectDetails title='Animation' catagory='Html' image={Html6}/>
+            <ProjectDetails title='Startup' catagory='Html' image={Html7}/>
+
+            <ProjectDetails title='Crud Operation' catagory='JavaScript' image={Java1}/>
+            <ProjectDetails title='Math Solutions' catagory='JavaScript' image={Java2}/>
+            <ProjectDetails title='Number Guess Game' catagory='JavaScript' image={Java3}/>
+            <ProjectDetails title='Digital Clock' catagory='JavaScript' image={Java4}/>
+            <ProjectDetails title='CounterJs' catagory='JavaScript' image={Java5}/>
+            <ProjectDetails title='Funny Click' catagory='JavaScript' image={Java6}/>
+            <ProjectDetails title='Dom Click' catagory='JavaScript' image={Java7}/>
+
+            <ProjectDetails title='eCommerce' catagory='React' image={React1}/>
+            <ProjectDetails title='Inspiration' catagory='React' image={React2}/>
+            <ProjectDetails title='Innovate' catagory='React' image={React3}/>
+            </Flex>
+          )
+          :
+          activelist===1 ? (
+            <Flex className='gap-5 flex-wrap'>
+            <ProjectDetails title='Nextcent' catagory='Html' image={Html1}/>
+            <ProjectDetails title='Foodi' catagory='Html' image={Html2}/>
+            <ProjectDetails title='Omah' catagory='Html' image={Html3}/>
+            <ProjectDetails title='Fresh' catagory='Html' image={Html4}/>
+            <ProjectDetails title='Shoes Cart' catagory='Html' image={Html5}/>
+            <ProjectDetails title='Animation' catagory='Html' image={Html6}/>
+            <ProjectDetails title='Startup' catagory='Html' image={Html7}/>
+            </Flex>
+          )
+          :
+          activelist == 2 ? (
+            <Flex className='gap-5 flex-wrap'>
+              <ProjectDetails title='Crud Operation' catagory='JavaScript' image={Java1}/>
+            <ProjectDetails title='Math Solutions' catagory='JavaScript' image={Java2}/>
+            <ProjectDetails title='Number Guess Game' catagory='JavaScript' image={Java3}/>
+            <ProjectDetails title='Digital Clock' catagory='JavaScript' image={Java4}/>
+            <ProjectDetails title='CounterJs' catagory='JavaScript' image={Java5}/>
+            <ProjectDetails title='Funny Click' catagory='JavaScript' image={Java6}/>
+            <ProjectDetails title='Dom Click' catagory='JavaScript' image={Java7}/>
+            </Flex>
+          )
+          :
+          (
+            <Flex className='gap-x-5 flex-wrap'>
+            <ProjectDetails title='eCommerce' catagory='React' image={React1}/>
+            <ProjectDetails title='Inspiration' catagory='React' image={React2}/>
+            <ProjectDetails title='Innovate' catagory='React' image={React3}/>
+            </Flex>
+          )
+
+        }
       </Container>
         
     </section>
