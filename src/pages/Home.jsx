@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Banner from '../layouts/Banner'
 import About from '../layouts/About'
 import Skills from '../layouts/Skills'
@@ -9,6 +9,9 @@ import Contact from '../layouts/Contact'
 
 
 const Home = () => {
+   useEffect(()=>{
+      window.scrollTo({top:0})
+    },[])
   return (
     <>
 

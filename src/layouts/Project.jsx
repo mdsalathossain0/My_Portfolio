@@ -4,6 +4,9 @@ import Image from '../components/Image'
 import Flex from '../components/Flex'
 
 
+
+
+
 import Orebi from '../assets/ecommerce.PNG'
 import Inspiration from '../assets/inspiration.PNG'
 import { Link } from 'react-router-dom'
@@ -30,6 +33,11 @@ import Java7 from '../assets/domclick.PNG'
 import React1 from '../assets/ecommerce.PNG'
 import React2 from '../assets/inspiration.PNG'
 import React3 from '../assets/innovate.PNG'
+import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css";
+import SamplePrevArrow from '../components/SamplePrevArrow';
+import SampleNextArrow from '../components/SampleNextArrow'
+
 
 const Project = () => {
   
@@ -39,6 +47,41 @@ const Project = () => {
   let handleClick=(index)=>{
     setActivelist(index)
   }
+
+   var settings = {
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    prevArrow: <SamplePrevArrow/>,
+    nextArrow: <SampleNextArrow/>,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
+   
 
   return (
     <section id='project' className='bg-fifth py-28'>
@@ -81,13 +124,13 @@ const Project = () => {
 
           </div>
         </Flex>
-        <h3 className='text-center text-[48px] text-third font-semibold font-robo pt-18'>Event to Event Project</h3>
-        <Flex className='gap-x-5 items-center justify-center pt-5 pb-12'>
+        <h3 className='text-center text-[32px] md:text-[36px] lg:text-[48px] text-third font-semibold font-robo pt-18'>Event to Event Project</h3>
+        <Flex className='gap-x-[10px] lg:gap-x-5 items-center justify-center pt-5 pb-12'>
           {
             list.map((item,index)=>(
               <div key={index} onClick={()=>handleClick(index)}>
                 
-                <h4 className={`${index===activelist? 'bg-third text-fifth': ''} text-2xl  font-medium font-robo py-2 px-3 rounded-lg cursor-pointer`}>{item}</h4>
+                <h4 className={`${index===activelist? 'bg-third text-fifth': ''} text-lg md:text-xl lg:text-2xl  font-medium font-robo py-2 px-3 rounded-lg cursor-pointer`}>{item}</h4>
               </div>
               
             ))
@@ -97,7 +140,8 @@ const Project = () => {
         {
           activelist===0 ? (
 
-            <Flex className='gap-5 flex-wrap'>
+            
+            <Slider {...settings}>
             <ProjectDetails title='Nextcent' catagory='Html' image={Html1}/>
             <ProjectDetails title='Foodi' catagory='Html' image={Html2}/>
             <ProjectDetails title='Omah' catagory='Html' image={Html3}/>
@@ -117,11 +161,13 @@ const Project = () => {
             <ProjectDetails title='eCommerce' catagory='React' image={React1}/>
             <ProjectDetails title='Inspiration' catagory='React' image={React2}/>
             <ProjectDetails title='Innovate' catagory='React' image={React3}/>
-            </Flex>
+            </Slider>
+           
           )
           :
           activelist===1 ? (
-            <Flex className='gap-5 flex-wrap'>
+            
+            <Slider {...settings}>
             <ProjectDetails title='Nextcent' catagory='Html' image={Html1}/>
             <ProjectDetails title='Foodi' catagory='Html' image={Html2}/>
             <ProjectDetails title='Omah' catagory='Html' image={Html3}/>
@@ -129,27 +175,32 @@ const Project = () => {
             <ProjectDetails title='Shoes Cart' catagory='Html' image={Html5}/>
             <ProjectDetails title='Animation' catagory='Html' image={Html6}/>
             <ProjectDetails title='Startup' catagory='Html' image={Html7}/>
-            </Flex>
+            </Slider>
+           
           )
           :
           activelist == 2 ? (
-            <Flex className='gap-5 flex-wrap'>
-              <ProjectDetails title='Crud Operation' catagory='JavaScript' image={Java1}/>
+            
+            <Slider {...settings}>
+            <ProjectDetails title='Crud Operation' catagory='JavaScript' image={Java1}/>
             <ProjectDetails title='Math Solutions' catagory='JavaScript' image={Java2}/>
             <ProjectDetails title='Number Guess Game' catagory='JavaScript' image={Java3}/>
             <ProjectDetails title='Digital Clock' catagory='JavaScript' image={Java4}/>
             <ProjectDetails title='CounterJs' catagory='JavaScript' image={Java5}/>
             <ProjectDetails title='Funny Click' catagory='JavaScript' image={Java6}/>
             <ProjectDetails title='Dom Click' catagory='JavaScript' image={Java7}/>
-            </Flex>
+            </Slider>
+            
           )
           :
           (
-            <Flex className='gap-x-5 flex-wrap'>
+            
+            <Slider {...settings}>
             <ProjectDetails title='eCommerce' catagory='React' image={React1}/>
             <ProjectDetails title='Inspiration' catagory='React' image={React2}/>
             <ProjectDetails title='Innovate' catagory='React' image={React3}/>
-            </Flex>
+            </Slider>
+            
           )
 
         }

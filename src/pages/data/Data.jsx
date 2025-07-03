@@ -1,23 +1,9 @@
 
-import Html1 from '../../assets/foodi.PNG'
-import Html2 from '../../assets/nexcent.PNG'
-import Html3 from '../../assets/omah.PNG'
-import Html4 from '../../assets/fresh.PNG'
-import Html5 from '../../assets/shoescart.PNG'
-import Html6 from '../../assets/animation.PNG'
-import Html7 from '../../assets/startup.PNG'
 
-import Java1 from '../../assets/crud.PNG'
-import Java2 from '../../assets/mathsol.PNG'
-import Java3 from '../../assets/guessnum.PNG'
-import Java4 from '../../assets/digitalclock.PNG'
-import Java5 from '../../assets/counterjs.PNG'
-import Java6 from '../../assets/fclick.PNG'
-import Java7 from '../../assets/domclick.PNG'
 
-import React1 from '../../assets/ecommerce.PNG'
-import React2 from '../../assets/inspiration.PNG'
-import React3 from '../../assets/innovate.PNG'
+
+
+
 
 
 let projectData =[

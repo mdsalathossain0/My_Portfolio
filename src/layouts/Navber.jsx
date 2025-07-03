@@ -16,7 +16,7 @@ import { Link, useLocation } from 'react-router-dom'
 
 
 const Navber = () => {
-         const location = useLocation();
+    const location = useLocation();
 
     useEffect(() => {
         if (location.state?.scrollTo) {

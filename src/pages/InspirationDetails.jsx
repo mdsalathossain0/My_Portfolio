@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Container from '../components/Container'
 import Heading from '../components/Heading'
 import ComText from '../components/ComText'
@@ -11,6 +11,9 @@ import Inspiration from '../assets/inspiration.PNG'
 import Tools from '../components/Tools'
 import { Link } from 'react-router'
 const OrebiDetails = () => {
+   useEffect(()=>{
+      window.scrollTo({top:0})
+    },[])
   return (
     <section className='bg-fifth py-15 lg:py-28'>
       <Container>
