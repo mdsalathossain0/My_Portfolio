@@ -142,25 +142,25 @@ const Project = () => {
 
             
             <Slider {...settings}>
-            <ProjectDetails title='Nextcent' catagory='Html' image={Html1}/>
-            <ProjectDetails title='Foodi' catagory='Html' image={Html2}/>
-            <ProjectDetails title='Omah' catagory='Html' image={Html3}/>
-            <ProjectDetails title='Fresh' catagory='Html' image={Html4}/>
-            <ProjectDetails title='Shoes Cart' catagory='Html' image={Html5}/>
-            <ProjectDetails title='Animation' catagory='Html' image={Html6}/>
-            <ProjectDetails title='Startup' catagory='Html' image={Html7}/>
+            <Link to='https://mdsalathossain0.github.io/Nexcent/'><ProjectDetails title='Nextcent' catagory='Html' image={Html1}/></Link>
+            <Link to='https://mdsalathossain0.github.io/Foodi-project/'><ProjectDetails title='Foodi' catagory='Html' image={Html2}/></Link>
+            <Link to='https://mdsalathossain0.github.io/Omah_project/'><ProjectDetails title='Omah' catagory='Html' image={Html3}/></Link>
+            <Link to='https://mdsalathossain0.github.io/Fresh/'><ProjectDetails title='Fresh' catagory='Html' image={Html4}/></Link>
+            <Link to='https://mdsalathossain0.github.io/Shoes_Cart/'><ProjectDetails title='Shoes Cart' catagory='Html' image={Html5}/></Link>
+            <Link to='https://mdsalathossain0.github.io/Simple_Animation/'><ProjectDetails title='Animation' catagory='Html' image={Html6}/></Link>
+            <Link to='https://mdsalathossain0.github.io/Startup3-project/'><ProjectDetails title='Startup' catagory='Html' image={Html7}/></Link>
 
-            <ProjectDetails title='Crud Operation' catagory='JavaScript' image={Java1}/>
-            <ProjectDetails title='Math Solutions' catagory='JavaScript' image={Java2}/>
-            <ProjectDetails title='Number Guess Game' catagory='JavaScript' image={Java3}/>
-            <ProjectDetails title='Digital Clock' catagory='JavaScript' image={Java4}/>
-            <ProjectDetails title='CounterJs' catagory='JavaScript' image={Java5}/>
-            <ProjectDetails title='Funny Click' catagory='JavaScript' image={Java6}/>
-            <ProjectDetails title='Dom Click' catagory='JavaScript' image={Java7}/>
+            <Link to='https://mdsalathossain0.github.io/Crud-Operation/'><ProjectDetails title='Crud Operation' catagory='JavaScript' image={Java1}/></Link>
+            <Link to='https://mdsalathossain0.github.io/Meth_solutions/'><ProjectDetails title='Math Solutions' catagory='JavaScript' image={Java2}/></Link>
+            <Link to='https://mdsalathossain0.github.io/number-guess-game/'><ProjectDetails title='Number Guess Game' catagory='JavaScript' image={Java3}/></Link>
+            <Link to='https://mdsalathossain0.github.io/digital-clock/'><ProjectDetails title='Digital Clock' catagory='JavaScript' image={Java4}/></Link>
+            <Link to='https://mdsalathossain0.github.io/counterJs-typeJs/'><ProjectDetails title='CounterJs' catagory='JavaScript' image={Java5}/></Link>
+            <Link to='https://mdsalathossain0.github.io/Funny-vt-project/'><ProjectDetails title='Funny Click' catagory='JavaScript' image={Java6}/></Link>
+            <Link to='https://mdsalathossain0.github.io/Dom-Click/'><ProjectDetails title='Dom Click' catagory='JavaScript' image={Java7}/></Link>
 
-            <ProjectDetails title='eCommerce' catagory='React' image={React1}/>
-            <ProjectDetails title='Inspiration' catagory='React' image={React2}/>
-            <ProjectDetails title='Innovate' catagory='React' image={React3}/>
+            <Link to='https://e-commerce-project-seven-omega.vercel.app/'><ProjectDetails title='eCommerce' catagory='React' image={React1}/></Link>
+            <Link to='https://inspiration-project.vercel.app/'><ProjectDetails title='Inspiration' catagory='React' image={React2}/></Link>
+            <Link to='https://innovative-project-final.vercel.app/'><ProjectDetails title='Innovate' catagory='React' image={React3}/></Link>
             </Slider>
            
           )
@@ -168,13 +168,13 @@ const Project = () => {
           activelist===1 ? (
             
             <Slider {...settings}>
-            <ProjectDetails title='Nextcent' catagory='Html' image={Html1}/>
-            <ProjectDetails title='Foodi' catagory='Html' image={Html2}/>
-            <ProjectDetails title='Omah' catagory='Html' image={Html3}/>
-            <ProjectDetails title='Fresh' catagory='Html' image={Html4}/>
-            <ProjectDetails title='Shoes Cart' catagory='Html' image={Html5}/>
-            <ProjectDetails title='Animation' catagory='Html' image={Html6}/>
-            <ProjectDetails title='Startup' catagory='Html' image={Html7}/>
+            <Link to='https://mdsalathossain0.github.io/Nexcent/'><ProjectDetails title='Nextcent' catagory='Html' image={Html1}/></Link>
+            <Link to='https://mdsalathossain0.github.io/Foodi-project/'><ProjectDetails title='Foodi' catagory='Html' image={Html2}/></Link>
+            <Link to='https://mdsalathossain0.github.io/Omah_project/'><ProjectDetails title='Omah' catagory='Html' image={Html3}/></Link>
+            <Link to='https://mdsalathossain0.github.io/Fresh/'><ProjectDetails title='Fresh' catagory='Html' image={Html4}/></Link>
+            <Link to='https://mdsalathossain0.github.io/Shoes_Cart/'><ProjectDetails title='Shoes Cart' catagory='Html' image={Html5}/></Link>
+            <Link to='https://mdsalathossain0.github.io/Simple_Animation/'><ProjectDetails title='Animation' catagory='Html' image={Html6}/></Link>
+            <Link to='https://mdsalathossain0.github.io/Startup3-project/'><ProjectDetails title='Startup' catagory='Html' image={Html7}/></Link>
             </Slider>
            
           )
@@ -182,13 +182,13 @@ const Project = () => {
           activelist == 2 ? (
             
             <Slider {...settings}>
-            <ProjectDetails title='Crud Operation' catagory='JavaScript' image={Java1}/>
-            <ProjectDetails title='Math Solutions' catagory='JavaScript' image={Java2}/>
-            <ProjectDetails title='Number Guess Game' catagory='JavaScript' image={Java3}/>
-            <ProjectDetails title='Digital Clock' catagory='JavaScript' image={Java4}/>
-            <ProjectDetails title='CounterJs' catagory='JavaScript' image={Java5}/>
-            <ProjectDetails title='Funny Click' catagory='JavaScript' image={Java6}/>
-            <ProjectDetails title='Dom Click' catagory='JavaScript' image={Java7}/>
+             <Link to='https://mdsalathossain0.github.io/Crud-Operation/'><ProjectDetails title='Crud Operation' catagory='JavaScript' image={Java1}/></Link>
+            <Link to='https://mdsalathossain0.github.io/Meth_solutions/'><ProjectDetails title='Math Solutions' catagory='JavaScript' image={Java2}/></Link>
+            <Link to='https://mdsalathossain0.github.io/number-guess-game/'><ProjectDetails title='Number Guess Game' catagory='JavaScript' image={Java3}/></Link>
+            <Link to='https://mdsalathossain0.github.io/digital-clock/'><ProjectDetails title='Digital Clock' catagory='JavaScript' image={Java4}/></Link>
+            <Link to='https://mdsalathossain0.github.io/counterJs-typeJs/'><ProjectDetails title='CounterJs' catagory='JavaScript' image={Java5}/></Link>
+            <Link to='https://mdsalathossain0.github.io/Funny-vt-project/'><ProjectDetails title='Funny Click' catagory='JavaScript' image={Java6}/></Link>
+            <Link to='https://mdsalathossain0.github.io/Dom-Click/'><ProjectDetails title='Dom Click' catagory='JavaScript' image={Java7}/></Link>
             </Slider>
             
           )
@@ -196,9 +196,9 @@ const Project = () => {
           (
             
             <Slider {...settings}>
-            <ProjectDetails title='eCommerce' catagory='React' image={React1}/>
-            <ProjectDetails title='Inspiration' catagory='React' image={React2}/>
-            <ProjectDetails title='Innovate' catagory='React' image={React3}/>
+            <Link to='https://e-commerce-project-seven-omega.vercel.app/'><ProjectDetails title='eCommerce' catagory='React' image={React1}/></Link>
+            <Link to='https://inspiration-project.vercel.app/'><ProjectDetails title='Inspiration' catagory='React' image={React2}/></Link>
+            <Link to='https://innovative-project-final.vercel.app/'><ProjectDetails title='Innovate' catagory='React' image={React3}/></Link>
             </Slider>
             
           )
