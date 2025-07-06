@@ -1,5 +1,6 @@
 import React from 'react'
 import Flex from './Flex'
+import Image from '../components/Image'
 
 import { HiPlusSm } from 'react-icons/hi'
 import { GrHtml5 } from 'react-icons/gr'
@@ -8,10 +9,11 @@ import { RiReactjsLine } from 'react-icons/ri'
 
 
 
-const ServiceCard = ({heading, text}) => {
+const ServiceCard = ({heading, text, image}) => {
   return (
     <div>
         <div className='group/main w-[270px] h-[340px] bg-white  rounded-xl relative'>
+        <Image className='w-full h-full rounded-xl' src={image}/>
       
             <div className='w-[190px] h-[110px] bg-[#2f354280] rounded-tr-xl absolute -bottom-[40px] left-0'>
                 <Flex className='py-4 px-3 gap-x-3'>
