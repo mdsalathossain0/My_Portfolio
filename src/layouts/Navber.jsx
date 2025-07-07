@@ -123,10 +123,10 @@ const Navber = () => {
                         <List text='Skills'/>
                     </div>
                     </Link>
-                    <Link state={{scrollTo:'portfolio'}}>
+                    <Link state={{scrollTo:'project'}}>
                     <div className='flex items-center gap-x-2'>
                         <FaRegAddressCard className='text-sm'/>
-                        <List text='Portfolio'/>
+                        <List text='Project'/>
                     </div>
                     </Link>
                     <Link state={{scrollTo:'services'}}>

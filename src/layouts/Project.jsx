@@ -98,6 +98,7 @@ const Project = () => {
           </Link>
           <div>
             <p className='lg:w-[400px] text-3xl md:text-4xl lg:text-[45px] text-third font-medium leading-12 text-center pb-10'>Orebi is a convenient online store where you can purchase any products</p>
+            <Link to='/orebidetails'>
             <div className='flex items-center gap-x-3 justify-center relative group/main'>
             <h5 className='text-third text-lg md:text-xl lg:text-2xl font-semibold font-robo relative z-10'>
              Projects Details
@@ -105,6 +106,7 @@ const Project = () => {
             </h5>
             <IoIosArrowRoundForward className='text-black font-bold text-2xl relative z-10'/>
             </div>
+            </Link>
               
 
           </div>
@@ -117,13 +119,15 @@ const Project = () => {
           </Link>
           <div>
             <p className='lg:w-[400px] text-3xl md:text-4xl lg:text-[45px] text-third font-medium leading-12 text-center pb-10'>Elevate your career with a personalized people portfolio designed to highlight your skills and experience. </p>
+            <Link to='/inspirationdetails'>
             <div className='flex items-center gap-x-3 justify-center relative group/main'>
             <h5 className='text-third text-lg md:text-xl lg:text-2xl font-semibold font-robo relative z-10'>
              Projects Details
             <span className='w-[50px] h-[45px] lg:h-[52px] bg-[#00000040] absolute -top-2 -left-2 rounded-l-sm group-hover/main:w-[185px] lg:group-hover/main:w-[215px] group-hover/main:rounded-sm duration-300 z-0'></span>
             </h5>
             <IoIosArrowRoundForward className='text-black font-bold text-2xl relative z-10'/>
-            </div>
+          </div>
+          </Link>
               
 
           </div>
