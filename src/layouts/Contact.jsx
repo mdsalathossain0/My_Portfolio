@@ -4,6 +4,11 @@ import Flex from '../components/Flex'
 import Heading from '../components/Heading'
 import ComText from '../components/ComText'
 import Button from '../components/Button'
+import ChatMe from '../components/ChatMe'
+import ContactBox from '../components/ContactBox'
+import { MdMarkEmailUnread } from 'react-icons/md'
+import { RiWhatsappFill } from 'react-icons/ri'
+import { FaFacebookMessenger } from 'react-icons/fa'
 
 const Contact = () => {
   return (
@@ -11,9 +16,11 @@ const Contact = () => {
         <Container>
           <Heading className='text-center' text='CONTACT'/>
           <ComText className='w-full lg:w-[700px] mx-auto py-8 text-center px-3 lg:px-0' text='Feel free to Contact me by submitting the form below and I will get back to you as soon as possible'/>
-          <Flex className='flex-col lg:flex-row lg:items-center pt-5'>
+          <Flex className='flex-col lg:flex-row lg:items-center pt-5 gap-y-10 lg:gap-y-0'>
             <div className='w-full lg:w-1/2'>
-            <p className='w-full px-3 lg:px-0 lg:w-[360px] text-3xl md:text-4xl lg:text-[45px] text-third font-medium leading-10 lg:leading-15 text-center pb-10'>Find Me easily Contact without any technical skills </p>
+            <ContactBox title='Email' info='mdsalathossain0@gmail.com' icon={<MdMarkEmailUnread />} link="mailto:mdsalathossain0@gmail.com"/>
+            <ContactBox title="What's App" info='+8801600140426' icon={<RiWhatsappFill  />} link="https://wa.me/8801600140426"/>
+            <ContactBox title='Messenger' info='Lemon' icon={<FaFacebookMessenger />} link="https://m.me/4230358240346541/"/>
             </div>
             <div className='w-full lg:w-1/2'>
             <div className='w-[90%] mx-auto bg-white py-5 px-10 rounded-xl'>
@@ -28,6 +35,7 @@ const Contact = () => {
             </div>
           </Flex>
         </Container>
+        <ChatMe/>
     </section>
   )
 }
