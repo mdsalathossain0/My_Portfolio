@@ -5,6 +5,7 @@ import Skills from '../layouts/Skills'
 import Project from '../layouts/Project'
 import Services from '../layouts/Services'
 import Contact from '../layouts/Contact'
+import ProjectCount from '../layouts/ProjectCount'
 
 
 
@@ -19,6 +20,7 @@ const Home = () => {
    <About/>
    <Skills/>
    <Project/>
+   <ProjectCount/>
    <Services/>
    <Contact/>
 

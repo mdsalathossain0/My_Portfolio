@@ -16,7 +16,7 @@ const Services = () => {
         <Container>
           <Heading className='text-center ' text='Services'/>
           <ComText className='w-full lg:w-[750px] mx-auto text-center pt-8 pb-15 px-3 lg:px-0' text='Our consultants have years of experience on the in success. ​Through the provision of our services. Find the service we provide'/>
-          <Flex className='flex-col lg:flex-row lg:justify-between gap-y-18 lg:gap-y-0 items-center'>
+          <Flex className='flex-wrap gap-5 lg:justify-between gap-y-18 lg:gap-y-15 items-center justify-center mx-3'>
             <ServiceCard heading='E-Commerce' text='Development' image={Eshop}/>
             <ServiceCard heading='Social Media' text='Development' image={Social}/>
             <ServiceCard heading='Corporate' text='Development' image={Corpotrate}/>
