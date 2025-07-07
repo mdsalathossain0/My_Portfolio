@@ -37,6 +37,8 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import SamplePrevArrow from '../components/SamplePrevArrow';
 import SampleNextArrow from '../components/SampleNextArrow'
+import Heading from '../components/Heading'
+import ComText from '../components/ComText'
 
 
 const Project = () => {
@@ -86,7 +88,9 @@ const Project = () => {
   return (
     <section id='project' className='bg-fifth py-28'>
       <Container>
-        <Flex className='flex-col lg:flex-row lg:justify-evenly gap-y-10 lg:gap-y-0 mx-3 lg:mx-0 pb-15 lg:pb-20'>
+        <Heading className='text-center' text='Project'/>
+        <ComText className='w-full lg:w-[700px] mx-auto px-3 lg:px-0 py-8 text-center' text='Here you will find some of the personal and clients projects that I created with each project containing its own case study.'/>
+        <Flex className='flex-col lg:flex-row lg:justify-evenly gap-y-10 lg:gap-y-0 pt-8 mx-3 lg:mx-0 pb-15 lg:pb-20'>
           <Link to='/orebidetails'>
           <div className='w-full lg:w-[550px] h-[400px] rounded-[12px] drop-shadow-2xl'>
             <Image className='w-full h-full rounded-[12px]' src={Orebi}/>

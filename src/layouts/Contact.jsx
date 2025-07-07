@@ -25,11 +25,11 @@ const Contact = () => {
             <div className='w-full lg:w-1/2'>
             <div className='w-[90%] mx-auto bg-white py-5 px-10 rounded-xl'>
               <label className='block pt-5 pb-2 text-xl text-third font-semibold font-robo' htmlFor="name">Name:</label>
-              <input className='block bg-[#00000020] rounded-lg py-2  pl-2 w-full pr-10 placeholder:text-sm placeholder:text-third placeholder:font-robo' type="text" name="" id="name" placeholder='Enter Your Name' />
+              <input className='block bg-[#00000020] rounded-lg py-2  pl-2 w-full pr-10 border-0 placeholder:text-sm placeholder:text-third placeholder:font-robo' type="text" name="" id="name" placeholder='Enter Your Name' />
               <label className='block pt-5 pb-2 text-xl text-third font-semibold font-robo' htmlFor="email">Email:</label>
-              <input className='block bg-[#00000020] rounded-lg py-2  pl-2 w-full pr-10 placeholder:text-sm placeholder:text-third placeholder:font-robo' type="email" name="" id="email" placeholder='Enter Your Email' />
+              <input className='block bg-[#00000020] rounded-lg py-2  pl-2 w-full pr-10 border-0 placeholder:text-sm placeholder:text-third placeholder:font-robo' type="email" name="" id="email" placeholder='Enter Your Email' />
               <label className='block pt-5 pb-2 text-xl text-third font-semibold font-robo' htmlFor="area">Messages:</label>
-              <textarea className='block bg-[#00000020] rounded-lg py-3  w-full pl-2 pr-10 mb-5 placeholder:text-sm placeholder:text-third placeholder:font-robo' name="" id="area" placeholder='Enter Your Message'></textarea>
+              <textarea className='block bg-[#00000020] rounded-lg py-3  w-full pl-2 pr-10 border-0 mb-5 placeholder:text-sm placeholder:text-third placeholder:font-robo' name="" id="area" placeholder='Enter Your Message'></textarea>
               <div className='flex justify-center pt-3'><Button text='Message'/></div>
             </div>
             </div>
