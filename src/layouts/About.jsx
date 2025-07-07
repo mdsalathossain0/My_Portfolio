@@ -4,7 +4,7 @@ import Heading from '../components/Heading'
 import ComText from '../components/ComText'
 import Flex from '../components/Flex'
 import Image from '../components/Image'
-import CV from '../assets/Abu_Salat_Lemon_Resume.pdf'
+import CV from '../assets/Abu_Salat_Lemon_resume.pdf'
 
 import AboutImg from '../assets/about.jpg'
 import { RiVerifiedBadgeFill } from 'react-icons/ri'
