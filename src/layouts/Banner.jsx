@@ -28,7 +28,7 @@ const Home = () => {
              <div className='text-center'>
                <h1 className=' text-xl md:text-[44px] lg:text-56 text-third font-bold font-pop leading-8 pb-6 md:pb-8 lg:pb-12 pr-4'>HEY, I'M ABU SALAT LEMON</h1>
               <SubHeading className='pb-5' text='Front-end Developer With React'/>
-              <ComText className='pb-15 px-5 lg:px-0' text='I,m a Professional Front-End Developer specializing in React, creating responsive, user-focused web interfaces with clean code, performance optimization, and modern design.'/>
+              <ComText className='pb-15 px-5 lg:px-0' text="I'm a Professional Front-End Developer specializing in React, creating responsive, user-focused web interfaces with clean code, performance optimization, and modern design."/>
               <Link state={{scrollTo:'project'}} ><span className='flex justify-center'><Button text='View Project' icon={<FaArrowDown />} iconPosition='right'/></span></Link>
              </div>
              </div>
