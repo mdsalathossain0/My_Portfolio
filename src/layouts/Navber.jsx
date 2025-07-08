@@ -4,7 +4,6 @@ import Flex from '../components/Flex'
 import List from '../components/List'
 import Image from '../components/Image'
 
-import Logo from '../assets/logo.jpg'
 import { AiOutlineHome } from 'react-icons/ai'
 import { FaRegAddressCard, FaRegFileAlt, FaRegUser } from 'react-icons/fa'
 import { IoBriefcaseOutline } from 'react-icons/io5'
@@ -13,7 +12,7 @@ import { HiOutlineBars3 } from 'react-icons/hi2'
 import { RxCross2 } from 'react-icons/rx'
 import { Link, useLocation } from 'react-router-dom'
 
-
+import Logo from '../assets/logo.png'
 
 const Navber = () => {
     const location = useLocation();
@@ -39,10 +38,8 @@ const Navber = () => {
             <Flex className='items-center'>
                 <div className='w-4/12'>
                    <Link to='/' state={{scrollTo:'home'}}>
-                    <Flex className='gap-x-5 items-center'>
-                        <div className='w-[55px] h-[55px] rounded-full'><Image className='w-full h-full rounded-full' src={Logo}/></div>
-                        <h1 className='lg:text-xl text-third font-bold font-pop italic'>LÊMON</h1>
-                    </Flex>
+                        <div className='w-[180px] h-[45px] '><Image className='w-full h-full' src={Logo}/></div>
+                        
                    </Link>
                 </div>
                 <div className='w-8/12 '>
@@ -94,7 +91,7 @@ const Navber = () => {
     {/* Mobile Start */}
     <nav className='relative bg-fourth lg:hidden py-4 '>
         <Flex className='px-4 justify-between items-center '>
-            <div><h1 className='text-lg text-third font-semibold font-pop '><i>Lêmon</i></h1></div>
+            <Link to='/'><div className='w-[120px] h-[30px]'><Image className='w-full h-full' src={Logo}/></div></Link>
             <div onClick={handleShow}>
                 {
                     show ? <RxCross2 className='text-third text-lg' /> : <HiOutlineBars3 className='text-third text-lg'/>
