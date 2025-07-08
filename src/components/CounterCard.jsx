@@ -7,7 +7,7 @@ const CounterCard = ({text, count, icon}) => {
 
     useEffect(()=>{
         let start=0
-        let duration = 1000
+        let duration = 1500
         let steps = 50
         let increment = Math.ceil(count/steps)
         let intervalTime = duration/steps
@@ -23,7 +23,7 @@ const CounterCard = ({text, count, icon}) => {
         },intervalTime)
     },[count])
   return (
-    <div className='bg-white  w-[160px] md:w-[230px] lg:w-[270px] h-[190px] py-3 px-2 rounded-lg drop-shadow-lg flex flex-col justify-center items-center gap-y-3 text-center'>
+    <div className='bg-white  w-[160px] md:w-[200px] lg:w-[230px] h-[190px] py-3 px-2 rounded-lg drop-shadow-lg flex flex-col justify-center items-center gap-y-3 text-center'>
         <span className='text-xl md:text-2xl lg:text-3xl text-third pb-3'>{icon}</span>
         <Flex className='gap-x-3 items-center'>
             <h5 className='text-third text-xl md:text-2xl lg:text-3xl font-bold font-robo leading-8'>{current}</h5>
