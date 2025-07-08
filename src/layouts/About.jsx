@@ -5,12 +5,12 @@ import ComText from '../components/ComText'
 import Flex from '../components/Flex'
 import Image from '../components/Image'
 
-import Resume from '../assets/abu_salat_lemon_resume.pdf'
-
 import AboutImg from '../assets/about.jpg'
 import { RiVerifiedBadgeFill } from 'react-icons/ri'
 import Button from '../components/Button'
 import { PiReadCvLogoFill } from 'react-icons/pi'
+
+import CV from '../assets/abu_salat_lemon_resume.pdf'
 
 const About = () => {
   return (
@@ -51,7 +51,7 @@ const About = () => {
            </Flex>
            <ComText className='py-10 px-5 lg:px-0 ' text='Im a Frontend Web Developer building the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Projects section.'/>
            <div className='flex justify-center lg:justify-start relative'>
-            <a download='' href={Resume}><Button  text='Download CV' icon={<PiReadCvLogoFill className='text-base lg:text-xl' />} iconPosition='right'/></a>
+            <a download='' href={CV}><Button  text='Download CV' icon={<PiReadCvLogoFill className='text-base lg:text-xl' />} iconPosition='right'/></a>
            </div>
           </div>
         </Flex>
