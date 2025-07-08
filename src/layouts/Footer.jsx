@@ -21,7 +21,7 @@ const Footer = () => {
         <div className='w-full lg:w-5/12 px-10 lg:px-0'>
         <Link to='/' state={{scrollTo:'home'}}>
 
-           <div className='w-[170px] lg:w-[210px] h-[50px] lg:h-[60px] '><Image className='w-full h-full ' src={Logo}/></div>
+           <div className='w-[170px] lg:w-[250px] h-[50px] lg:h-[70px] '><Image className='w-full h-full ' src={Logo}/></div>
 
         </Link>
         <div className='flex  gap-x-5  items-center pt-12 lg:pt-18 pl-3'>
