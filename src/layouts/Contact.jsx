@@ -15,12 +15,12 @@ const Contact = () => {
     <section id='contact' className='bg-fifth py-18 lg:py-28'>
         <Container>
           <Heading className='text-center' text='CONTACT'/>
-          <ComText className='w-full lg:w-[700px] mx-auto py-8 text-center px-3 lg:px-0' text='Feel free to Contact me by submitting the form below and I will get back to you as soon as possible'/>
+          <ComText className='w-full lg:w-[700px] mx-auto py-8 text-center px-3 lg:px-0' text='Feel free to Contact me by submitting the form below and I will get back to you as soon as possible.'/>
           <Flex className='flex-col lg:flex-row lg:items-center pt-5 gap-y-10 lg:gap-y-0'>
             <div className='w-full lg:w-1/2'>
             <ContactBox title='Email' info='mdsalathossain0@gmail.com' icon={<MdMarkEmailUnread />} link="mailto:mdsalathossain0@gmail.com"/>
             <ContactBox title="What's App" info='+8801600140426' icon={<RiWhatsappFill  />} link="https://wa.me/8801600140426"/>
-            <ContactBox title='Messenger' info='Lemon' icon={<FaFacebookMessenger />} link="https://m.me/4230358240346541/"/>
+            <ContactBox title='Messenger' info='Lemon' icon={<FaFacebookMessenger />} link="https://m.me/salat2020"/>
             </div>
             <div className='w-full lg:w-1/2'>
             <div className='w-[90%] mx-auto bg-white py-5 px-10 rounded-xl'>

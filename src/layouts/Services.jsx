@@ -15,7 +15,7 @@ const Services = () => {
     <section id='services' className='pt-20 pb-28  lg:py-28  bg-fifth'>
         <Container>
           <Heading className='text-center ' text='Services'/>
-          <ComText className='w-full lg:w-[750px] mx-auto text-center pt-8 pb-15 px-3 lg:px-0' text='Our consultants have years of experience on the in success. ​Through the provision of our services. Find the service we provide'/>
+          <ComText className='w-full lg:w-[750px] mx-auto text-center pt-8 pb-15 px-3 lg:px-0' text='Our consultants have years of experience on the in success.​Through the provision of our services. Find the service we provide.'/>
           <Flex className='flex-wrap gap-5 lg:justify-between gap-y-18 lg:gap-y-15 items-center justify-center mx-3'>
             <ServiceCard heading='E-Commerce' text='Development' image={Eshop}/>
             <ServiceCard heading='Social Media' text='Development' image={Social}/>
