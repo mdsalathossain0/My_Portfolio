@@ -86,11 +86,11 @@ const Project = () => {
    
 
   return (
-    <section id='project' className='bg-fifth py-28'>
+    <section id='project' className='bg-fifth py-10 lg:py-22'>
       <Container>
         <Heading className='text-center' text='Project'/>
-        <ComText className='w-full lg:w-[700px] mx-auto px-3 lg:px-0 py-8 text-center' text='Here you will find some of the personal and clients projects that I created with each project containing its own case study.'/>
-        <Flex className='flex-col lg:flex-row lg:justify-evenly gap-y-10 lg:gap-y-0 pt-8 mx-3 lg:mx-0 pb-15 lg:pb-20'>
+        <ComText className='w-full lg:w-[700px] mx-auto px-4 lg:px-0 py-4 lg:py-8 text-center' text='Here you will find some of the personal and clients projects that I created with each project containing its own case study.'/>
+        <Flex className='flex-col lg:flex-row lg:justify-evenly gap-y-10 lg:gap-y-0 pt-8 mx-4 lg:mx-0 pb-15 lg:pb-20'>
           <Link to='/orebidetails'>
           <div className='w-full lg:w-[550px] h-[400px] rounded-[12px] drop-shadow-2xl'>
             <Image className='w-full h-full rounded-[12px]' src={Orebi}/>
@@ -111,7 +111,7 @@ const Project = () => {
 
           </div>
         </Flex>
-        <Flex className='flex-col lg:flex-row lg:justify-evenly gap-y-10 lg:gap-y-0 mx-3 lg:mx-0'>
+        <Flex className='flex-col lg:flex-row lg:justify-evenly gap-y-10 lg:gap-y-0 mx-4 lg:mx-0'>
           <Link to='/inspirationdetails'>
           <div className='w-full lg:w-[550px] h-[400px] rounded-[12px] drop-shadow-2xl'>
             <Image className='w-full h-full rounded-[12px]' src={Inspiration}/>
@@ -138,7 +138,7 @@ const Project = () => {
             list.map((item,index)=>(
               <div key={index} onClick={()=>handleClick(index)}>
                 
-                <h4 className={`${index===activelist? 'bg-third text-fifth': ''} text-lg md:text-xl lg:text-2xl  font-medium font-robo py-2 px-3 rounded-lg cursor-pointer`}>{item}</h4>
+                <h4 className={`${index===activelist ? 'bg-third text-fifth': ''} text-lg md:text-xl lg:text-2xl  font-medium font-robo py-2 px-3 rounded-lg cursor-pointer`}>{item}</h4>
               </div>
               
             ))

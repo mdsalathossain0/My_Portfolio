@@ -11,11 +11,11 @@ import ComText from '../components/ComText'
 
 const ProjectCount = () => {
   return (
-    <section className='bg-fifth pt-28 pb-18'>
+    <section className='bg-fifth pt-28 pb-10 lg:pb-18'>
      <Container>
       <Heading className='text-center' text='Total Works'/>
-      <ComText className='w-full lg:w-[800px] mx-auto text-center py-8 px-3 lg:px-0' text='I’m a dedicated developer who enjoys solving problems and working with others. I always try to write clean code, keep learning, and give my best to build useful and effective solutions.'/>
-        <Flex className='flex-wrap justify-center lg:justify-between gap-5  mx-3 pt-5'>
+      <ComText className='w-full lg:w-[800px] mx-auto text-center py-4 lg:py-8 px-3 lg:px-0' text='I’m a dedicated developer who enjoys solving problems and working with others. I always try to write clean code, keep learning, and give my best to build useful and effective solutions.'/>
+        <Flex className='flex-wrap justify-center lg:justify-between gap-5  mx-4 pt-5'>
             <CounterCard text='Total Project' count='28' icon={<FaAllergies />}/>
             <CounterCard text='Total HTML' count='12' icon={<ImHtmlFive />}/>
             <CounterCard text='Total JavaScript' count='10' icon={<AiOutlineJavaScript />}/>
