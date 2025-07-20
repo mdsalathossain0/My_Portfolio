@@ -13,6 +13,8 @@ import { Link } from 'react-router-dom'
 import { IoIosArrowRoundForward } from 'react-icons/io'
 import ProjectDetails from '../components/ProjectDetails'
 
+import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css";
 
 import Html1 from '../assets/nexcent.PNG'
 import Html2 from '../assets/foodi.PNG'
@@ -33,8 +35,9 @@ import Java7 from '../assets/domclick.PNG'
 import React1 from '../assets/ecommerce.PNG'
 import React2 from '../assets/inspiration.PNG'
 import React3 from '../assets/innovate.PNG'
-import Slider from 'react-slick';
-import "slick-carousel/slick/slick.css";
+import React4 from '../assets/reacttodo.PNG'
+
+
 import SamplePrevArrow from '../components/SamplePrevArrow';
 import SampleNextArrow from '../components/SampleNextArrow'
 import Heading from '../components/Heading'
@@ -169,6 +172,7 @@ const Project = () => {
             <Link to='https://e-commerce-project-seven-omega.vercel.app/'><ProjectDetails title='eCommerce' catagory='React' image={React1}/></Link>
             <Link to='https://inspiration-project.vercel.app/'><ProjectDetails title='Inspiration' catagory='React' image={React2}/></Link>
             <Link to='https://innovative-project-final.vercel.app/'><ProjectDetails title='Innovate' catagory='React' image={React3}/></Link>
+            <Link to='https://crudoperation-xi.vercel.app/'><ProjectDetails title='React ToDo' catagory='React' image={React4}/></Link>
             </Slider>
            
           )
@@ -207,6 +211,7 @@ const Project = () => {
             <Link to='https://e-commerce-project-seven-omega.vercel.app/'><ProjectDetails title='eCommerce' catagory='React' image={React1}/></Link>
             <Link to='https://inspiration-project.vercel.app/'><ProjectDetails title='Inspiration' catagory='React' image={React2}/></Link>
             <Link to='https://innovative-project-final.vercel.app/'><ProjectDetails title='Innovate' catagory='React' image={React3}/></Link>
+            <Link to='https://crudoperation-xi.vercel.app/'><ProjectDetails title='React ToDo' catagory='React' image={React4}/></Link>
             </Slider>
             
           )
